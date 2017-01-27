@@ -9,7 +9,7 @@ parity = SerialPort::NONE
 
 serial = SerialPort.new(port, baudRate, dataBits, stopBits, parity)
 
-#con = Mysql.new 'localhost', 'user', 'pass', 'db'
+#con = Mysql.new 'sql11.freemysqlhosting.net', 'sql11155651', 'uwh45VlDHi', 'sql11155651'
 
 while true do
 	while (msg = serial.gets) do
