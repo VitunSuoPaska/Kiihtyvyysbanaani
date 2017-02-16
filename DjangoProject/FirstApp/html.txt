@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script src ="https://code.jquery.com/jquery-latest.min.js"></script>
+   
+
+    <meta name="description" content="">
+    <meta name="author" content="">
+    
+
+    <title>Kiihtyvyys Sivu</title>
+
+    <!-- Bootstrap core CSS -->
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>
+
+
+  </head>
+
+  <body>
+<script>
+	$(document).ready(function(){
+		var my_refresh = setInterval(function(){
+			$('#output_box').load('');
+		},10000);
+	});
+	</script>
+
+<div id="output_box">
+
+	
+
+
+          <h2 class="sub-header">Kiihtyvyys Sivu</h2>
+          <div class="table-responsive">
+            <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th>Aika</th>
+                  <th>X</th>
+                  <th>Y</th>
+                  <th>Z</th>
+                </tr>
+              </thead>
+              <tbody>
+      
+              
