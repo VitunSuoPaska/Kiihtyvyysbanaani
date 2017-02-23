@@ -12,7 +12,7 @@ float gx, gy, gz; //scaled Gyro values
 SoftwareSerial bluetooth(BL_TX, BL_RX);
 
 void setup() {
-  bluetooth.begin(115200);  // The Bluetooth Mate defaults to 115200bps
+   bluetooth.begin(115200);  // The Bluetooth Mate defaults to 115200bps
 
   #ifdef SERIAL_MSG
   Serial.begin(9600); // initialize Serial communication
@@ -38,6 +38,6 @@ void loop() {
   #endif
   
   bluetooth.println(buffer);
-  delay(100);
+  delay(1000);
   free (buffer);
 }
