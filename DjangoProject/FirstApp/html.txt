@@ -23,13 +23,18 @@
 
   <body>
 <script>
+
+	
+	
 	$(document).ready(function(){
+		var alreadyLoaded = false;
 		var my_refresh = setInterval(function(){
+			if(alreadyLoaded) return false;
+			alreadyLoaded = true;
 			$('#output_box').load('');
-		},10000);
+			},1000);
 	});
 	</script>
-
 <div id="output_box">
 
 	
